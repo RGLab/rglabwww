@@ -24,68 +24,69 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
   </head>
   
-  <body data-spy="scroll" data-target=".subnav" data-offset="50">
-  <!--<body data-spy="scroll" data-target=".bs-docs-sidebar">-->
-  <!--==================Navbar=================================-->
+  <body>
 	  <div class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="navbar-inner">
 			  <div class="container">
-				  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 				  </button>
 				  <a class="brand" href="./index.html">rglab</a>
-				  <div class="nav-collapse collapse">
+				  <div class="nav-collapse">
 					  <ul class="nav">
-					  <li class="active" rel="tooltip" title="Home page&#10;You are here">
-					  <a href="#"><i class="icon-home icon-white"></i> Home</a>
-					  </li>
-					  <li class="">
-					  <a href="./research.html" rel="tooltip" title="Our research topics"><i class="icon-pencil icon-white"></i> Research</a>
-					  </li>
-					  <li class="">
-					  <a href="./publications.html" rel="tooltip" title="Our publications"><i class="icon-book icon-white"></i> Publications</a>
-					  </li>
-					  <li class="">
-					  <a href="./software.html" rel="tooltip" title="Our softwares"><i class="icon-cog icon-white"></i> Software</a>
-					  </li>
-					  <li class="">
-					  <a href="./members.html"rel="tooltip" title="The team"><i class="icon-user icon-white">
-					  </i> Members</a></li>
-					  <li class="">
-					  <a href="./jobs.html" rel="tooltip" title="Available positions at the lab"><i class="icon-search icon-white"></i> Jobs</a>
-					  </li>
-					  <li class="">
-					  <a href="./contact.html" rel="tooltip" title="Contact us"><i class="icon-envelope icon-white"></i> Contact</a>
-					  </li>
+						  <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
+						  <li><a href="./research.html"><i class="icon-pencil icon-black"></i> Research</a></li>
+						  <li><a href="./publications.html"><i class="icon-book icon-black"></i> Publications</a></li>
+						  <li><a href="./software.html"><i class="icon-hdd icon-black"></i> Software</a></li>
+						  <li><a href="./members.html"><i class="icon-user icon-black"></i> Members</a></li>
+						  <li><a href="./jobs.html"><i class="icon-search icon-black"></i> Jobs</a></li>
+						  <li><a href="./contact.html"><i class="icon-envelope icon-black"></i> Contact</a></li>
 					  </ul>
-					  <form class="navbar-search pull-right" action="http://google.com/search" method="get">
-					  <input type="hidden" name="q" value="site:rglab.org" />						  
-					  <input type="text" class="search-query" name="q" results="0" placeholder="Search" rel="tooltip" title="Google search for rglab"/>
-					  </form>
 				  </div><!--/.nav-collapse -->		  
 			  </div>
 		  </div>
 	  </div>
 
-	  <div class="container">
 		  <!-- Masthead ================================================== -->
-		  <header class="jumbotron subhead" id="home">
+	  <header class="jumbotron subhead" id="Home">
+		  <div class="container">		  
 			  <h1><a href="http://www.rglab.org" rel="tooltip" title="Raphael Gottardo's Research Lab">rglab</a>::home</h1>
-				  <p class="lead">Raphael Gottardo's Research Lab</p>
-		  </header><!-- /header -->
-	  </div><!-- /container -->
+			  <p class="lead">Raphael Gottardo's Research Lab</p>
+		  </div><!-- /container -->
+	  </header><!-- /header -->
+	  
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">    
+			<form class="navbar-search pull-right" action="http://google.com/search" method="get">
+		    <input type="hidden" name="q" value="site:rglab.org" />
+		    <input type="text" class="search-query" type="text" name="q" results="0" placeholder="Search" rel="tooltip" title="Google search for rglab"/>
+		    </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+	  <div class="row">				
+		  <div class="span12">
+			<div class="alert alert-info">
+			  <strong>Announcement:</strong> Data for the NIH/NIAID-sponsored FlowCAP-III summit to be held at the NIH campus from 29 to 30 Nov 2012 have been released. Visit the <a  href="http://flowcap.flowsite.org" target="_blank">FlowCAP</a> website for more details.
+			    <button type="button" class="close" data-dismiss="alert">×</button>			  
+			  </div>
+		  </div><!-- /span -->
+	  </div><!-- /well -->
+</div><!-- /container -->
 
 	  <div class="container">
 		  <div class="row">				
 			  <div class="span12">
 				  <div class="well">														
 					  <h2>About us</h2>
-					  We are part of the Vaccine and Infectious Disease Division of the <a href="http://www.fhcrc.org" rel="tooltip" title="http://www.fhcrc.org" rel="tooltip">Fred Hutchinson Cancer Research Center</a> in Seattle.
+					  We are part of the <a href="http://www.fhcrc.org/en/labs/vaccine-and-infectious-disease.html" id="VIDD" target="_blank">Vaccine and Infectious Disease Division</a> of the <a href="http://www.fhcrc.org" title="http://www.fhcrc.org" target="_BLANK">Fred Hutchinson Cancer Research Center</a> in Seattle.
 					  We develop cutting edge statistical methods and software tools for the analysis of high throughput biological data with 
-					  an emphasis on data issued on immuology and vaccine research. 
-					  We collaborate with biologists accross a wide range of to apply of methods and tools ...						
+					  an emphasis on immunology and vaccine research. In particular we are interested in using system approaches that can be used to predict how the immune system will respond to a particular infection of vaccination. We work with bench scientists and clinicians to understand and ultimately cure severe diseases such HIV, malaria and cancer.		
 				  </div><!-- /row -->
 			  </div><!-- /span -->
 		  </div><!-- /well -->
@@ -102,7 +103,7 @@
 					  <script type="text/javascript" src="./utils/js/jquery.tweetable.js"></script>
 					  <script type="text/javascript">
 						  $(function(){
-							  $('#tweets').tweetable({username: 'raphg', time: true, limit: 5, replies: true, position: 'append'});
+							  $('#tweets').tweetable({username: 'raphg', time: true, limit: 6, replies: true, position: 'append'});
 						  });
 					  </script>
 					  <!--[if IE 6]>
