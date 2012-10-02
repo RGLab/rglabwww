@@ -19,6 +19,7 @@ body {
 
 /* Used to seperate papers in publications */
 h4.year {
+	padding-top:50px;
 	text-align:center; 
 	border-bottom: 1px solid #eee; 
 	line-height: 0.1em;
@@ -767,3 +768,11 @@ form.well {
     float: none;
   }
 }
+
+/*hack for the anchor offset*/
+.wrapperdiv{
+  position:relative;
+  top:-50px;
+}
+
+
