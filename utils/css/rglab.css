@@ -19,7 +19,7 @@ body {
 
 /* Used to seperate papers in publications */
 h4.year {
-	padding-top:50px;
+/*	padding-top:50px;*/
 	text-align:center; 
 	border-bottom: 1px solid #eee; 
 	line-height: 0.1em;
@@ -671,6 +671,11 @@ form.well {
     margin-top: -20px; /* Offset bottom margin on .navbar */
   }
   /* Adjust sidenav width */
+  .nav {
+    margin-left: -5px;
+    margin-right: -5px;    
+  }
+  
 }
 
 /* Tablet
@@ -719,6 +724,14 @@ form.well {
   .footer p {
     margin-bottom: 9px;
   }
+  
+  /* Make sure the nav is not floating for small width */ 
+  .nav {
+    width: auto;
+    margin-bottom: 0px;
+    position: static;    
+  }
+  
 }
 
 /* Landscape phones
@@ -769,10 +782,13 @@ form.well {
   }
 }
 
+
+
+
 /*hack for the anchor offset*/
-.wrapperdiv{
+/*.wrapperdiv{
   position:relative;
   top:-50px;
-}
+}*/
 
 
