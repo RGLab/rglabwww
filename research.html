@@ -90,31 +90,21 @@
 					  <ul class="nav nav-tabs">
 						  <li class="active"><a href="#1" data-toggle="tab">Cytometry</a></li>
 						  <li><a href="#2" data-toggle="tab">Peptide microarrays</a></li>
-						  <li><a href="#5" data-toggle="tab">Single-cell gene expression</a></li>
-						  <li><a href="#2" data-toggle="tab">Immunology and vaccine research</a></li>
-						  
-						  <li><a href="#3" data-toggle="tab">Next generation sequencing</a></li>
-						  <li><a href="#4" data-toggle="tab">Statistical computing</a></li>						  
+						  <li><a href="#3" data-toggle="tab">Single-cell gene expression</a></li>
+						  <li><a href="#4" data-toggle="tab">Immunology and vaccine research</a></li>						  
+						  <li><a href="#5" data-toggle="tab">Next generation sequencing</a></li>
+						  <li><a href="#6" data-toggle="tab">Statistical computing</a></li>						  
 						  
 					  </ul>
 					  <div class="tab-content">
 						  <div class="tab-pane active" id="1">
 							  <p>We do research on new statistical methods for analysing flow cytometry data, including methods for determining vaccine positivity, automated and semi-automated gating and data analysis pipelines, as well as quality assurance and quality control.</p>
-						  <ul class="thumbnails">
-						  <li class="span6">
-						   <a href="./utils/img/Fluidigm.png" class="thumbnail" id="cyto1" title="Single-cell gene expression in tetramer-sorted cell populations">
-<img src="./utils/img/Fluidigm.png" alt="Single_Cell_Gene_Expression">
-</a>
-<h4>Single-Cell Gene Expression and Positivity</h4>
-<p>Subject-specific differences as well as stimulation-specific common patterns in single-cell gene expression are observed between differentially stimulated, tetramer-sorted cell subpopulations. The data was analyzed using our new MIMOSA (Mixture Models for Single-Cell Assays) tool.</p>
-</li>
-</ul>
-						  
-						  </div>
+							  </div>
+					
 						  <div class="tab-pane" id="2">
 							  <p>Our group researches advanced statistical modeling techniques to improve the power to detect antibody epitopes using peptide microarray experiments. We aim to develop flexible, robust methodology that shares relevant information between subjects while accommodating aspects of experiments that are unique to immunological applications. We are also developing a unified software environment to streamline data analysis from preprocessing up through detection and visualization. Our methodology is currently being applied to many vaccine trials including the human and non-human primate studies. 							  </p>
 							  
-<p>The two figures below show an application of our analysis and visualization pipeline applied to the RV144 pilot microarray data published in <em>AIDS Research and Human Retroviruses</em>.</p><br />
+								<p>The two figures below show an application of our analysis and visualization pipeline applied to the RV144 pilot microarray data published in <em>AIDS Research and Human Retroviruses</em>.</p><br />
 							  	<ul class="thumbnails">
 							  	  <li class="span6">
 							  	    <a href="./utils/img/V2-RV144.png" class="thumbnail" id="pep1" title="RV144 V2 loop aggregate response">
@@ -132,7 +122,22 @@
 							  	    </li>							  	  
 							  	</ul>
 						  </div>
-						  <div class="tab-pane" id="3">
+						  <div class="tab-pane" id="3">							  
+						  	  <ul class="thumbnails">
+						  	  <li class="span6">
+						  	   <a href="./utils/img/Fluidigm.png" class="thumbnail" id="cyto1" title="Single-cell gene expression in tetramer-sorted cell populations">
+						  		<img src="./utils/img/Fluidigm.png" alt="Single_Cell_Gene_Expression">
+						  		</a>
+						  		<h4>Single-Cell Gene Expression and Positivity</h4>
+						  		<p>Subject-specific differences as well as stimulation-specific common patterns in single-cell gene expression are observed between differentially stimulated, tetramer-sorted cell subpopulations. The data was analyzed using our new MIMOSA (Mixture Models for Single-Cell Assays) tool.</p>
+						  		</li>
+						  		</ul>						  
+						  	  </div>
+						  <div class="tab-pane" id="4">
+						  	  <p>We collaborate with bench scientists and clinicians throughout multiple networks including the HIV Vaccine Trial Network, the Microbicide Trial Network, the Immune Tolerance Network and the Human Immunology Project Consortium.</p>
+						  </div>
+						  
+						  <div class="tab-pane" id="5">
 							  <p>For the past decade, microarrays have been the platform of choice for various high-throughput biological studies. In fact, our group has significantly contributed to the development of statistical methods for microarray data.
 							 Recent improvements in the efficiency, quality, and cost of genome-wide sequencing are 
 							 prompting biologists to rapidly abandon microarrays in favor of so-called next-generation sequencers. Next-generation sequencing technologies, capable of producing tens of 
@@ -146,18 +151,30 @@
 							 pressing need for statistical and computational tools to make sense of these data.
 							  
 							  To this end, our group has developed several methods for the analysis of ChIP-Seq and MNase-Seq data. The Figures below illustrate our analysis pipeline using 
-							  <!--<a href="#" id=-->
-							  <!--"PICS" target="_blank">PICS</a>, <a href="#" id=-->
-							  <!--"rGADEM" target="_blank">rGADEM</a>, <a href="#" id=-->
-							  <!--"MotIV" target="_blank">MotIV</a> and <a href="#" id=-->
-							  <!--"PING" target="_blank">PING</a>. -->
-<a href="http://www.bioconductor.org/packages/devel/bioc/html/PICS.html" title="Probabilistic Inference for ChIP-Seq">PICS</a>,
- <a title="de novo motif discovery" href="http://www.bioconductor.org/packages/devel/bioc/html/rGADEM.html">rGADEM</a>,
- <a title="Motif Identification and Validation" href="http://www.bioconductor.org/packages/devel/bioc/html/MotIV.html">MotIV</a> and
- <a href="http://www.bioconductor.org/packages/devel/bioc/html/PING.html" title="Probabilistic Inference for Nucleosome Positioning">PING</a>.
-</p>
+					<a href="http://www.bioconductor.org/packages/devel/bioc/html/PICS.html" title="Probabilistic Inference for ChIP-Seq" target="_blank">PICS</a>,
+					 <a title="de novo motif discovery" href="http://www.bioconductor.org/packages/devel/bioc/html/rGADEM.html" target="_blank">rGADEM</a>,
+					 <a title="Motif Identification and Validation" href="http://www.bioconductor.org/packages/devel/bioc/html/MotIV.html" target="_blank">MotIV</a> and
+					 <a href="http://www.bioconductor.org/packages/devel/bioc/html/PING.html" title="Probabilistic Inference for Nucleosome Positioning" target="_blank">PING</a>.
+						</p><br/>
+						<ul class="thumbnails">
+						<li class="span6">
+						 <a href="./utils/img/RG_SW_bwfigure2.png" class="thumbnail" id="epi1" title="ChIP-Seq analysis with PICS">
+							<img src="./utils/img/RG_SW_bwfigure2.png" alt="PICS_example">
+							</a>
+							<h4>PICS increases spatial resolution of binding event detection</h4>
+							<p>Transcription factor binding sites identified by PICS, iSeq, BayesPeak and MACS. PICS identifies two binding events in this region while other three methods identify these two events as one broad enriched region.</p>
+							</li>
+							<li class="span6">
+							 <a href="./utils/img/RG_SW_bwfigure4.png" class="thumbnail" id="epi2" title="Nucleosome positioning analysis with PING">
+								<img src="./utils/img/RG_SW_bwfigure4.png" alt="Nucleosome positioning analysis with PING">
+								</a>
+								<h4>PING identifies weakly positioned nucleosomes.</h4>
+								<p>Expected Nucleosome positioning in Chr1 for 149000-153000 genomic region using PING and TpF. PING can identify nucleosome positioning with weak signal compared to TpF.</p>
+								</li>							
+							</ul>						  												
 						  </div>
-						  <div class="tab-pane" id="4">
+						  
+						  <div class="tab-pane" id="6">
 							  <p></p>
 						  </div>
 					  </div>
@@ -224,6 +241,24 @@
     		}
     	}
     });	});
+
+$(document).ready(function() {
+$("#epi1").fancybox({
+	helpers : {
+		title : {
+			type : 'over'
+		}
+	}
+});	});
+
+$(document).ready(function() {
+$("#epi2").fancybox({
+	helpers : {
+		title : {
+			type : 'over'
+		}
+	}
+});	});
     
 	</script>	
 	
