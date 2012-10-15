@@ -127,11 +127,17 @@
 						  	  <ul class="thumbnails">
 						  	  <li class="span6">
 						  	   <a href="./utils/img/Fluidigm.png" class="thumbnail" id="cyto1" title="Single-cell gene expression in tetramer-sorted cell populations">
-						  		<img src="./utils/img/Fluidigm.png" alt="Single_Cell_Gene_Expression">
+						  		<img src="./utils/img/Fluidigm.png" height="500" width="500" alt="Single_Cell_Gene_Expression">
 						  		</a>
 						  		<h4>Single-Cell Gene Expression and Positivity</h4>
 						  		<p>Subject-specific differences as well as stimulation-specific common patterns in single-cell gene expression are observed between differentially stimulated, tetramer-sorted cell subpopulations. The data was analyzed using our new MIMOSA (Mixture Models for Single-Cell Assays) tool.</p>
 						  		</li>
+								<li class="span6">
+									<a href="./utils/img/concordcomp.png" class="thumbnail" id="cyto2" title="Concordance between single-cell and 100-cell Fluidigm gene expression experiments">
+										<img src="./utils/img/concordcomp.png" height="500" width="455" alt="Single_Cell_Hundred_Cell_Concordance">
+									</a>
+									<h4>Concordance of Single-Cell and Hundred-Cell Gene Expression Experiments</h4>
+									<p>The concordance between single-cell gene expression experiments and the average per-cell expression from 100-cell gene expression experiments is shown for three different data sets (columns) when unexpressed genes are treated as missing observations (second row) or as exact zeros (top row). Filtering of outlier values is applied (last row) improving concordance between the experiments. Treating unexpressed genes as zeros rather than missing observations improves the concordance, indicating that these genes are truly not expressed rather than undetectable through this technology.
 						  		</ul>						  
 						  	  </div>
 						  <div class="tab-pane" id="4">
@@ -139,8 +145,11 @@
 						  	  Here are some of the applications we are currently working on:
 						  	  <dl>
 						  	    <dt>Epitope mapping</dt>
+								<dd>
+									In collaboration with the <a href="http://www.hvtn.org" target="_blank">HVTN</a> we are testing new methods for positivity calls (<a href="http://arxiv.org/abs/1208.5809" target="_blank">MIMOSA</a>) on other assays, including epitope mapping and EliSpot.
+								</dd>
 						  	    <dd></dd>
-						  	    <dt>Immune correlate</dt>
+						  	    <dt>Immune correlates</dt>
 						  	    <dd></dd>
 								<dt>Polyfunctionality</dt>
 								<dd>In collaboration with Steve de Rosa (<a href="http://www.hvtn.org" target="_blank">HVTN</a>) we are working on utilizing high dimensional technologies that measure multiple functions (<em>e.g.</em> genes, cytokines) from individual cells to characterize cell poly-functionality in response to vaccination.
@@ -239,7 +248,14 @@
 		}
 	}
 	});});
-	
+	$(document).ready(function() {
+	$("#cyto2").fancybox({
+	helpers : {
+		title : {
+			type : 'over'
+		}
+	}
+	});});
 	$(document).ready(function() {
 	$("#pep1").fancybox({
     	helpers : {
