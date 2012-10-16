@@ -98,7 +98,20 @@
 					  </ul>
 					  <div class="tab-content">
 						  <div class="tab-pane active" id="1">
-							  <p>We do research on new statistical methods for analyzing flow cytometry data, including methods for determining vaccine positivity, automated and semi-automated gating and data analysis pipelines, as well as quality assurance and quality control.</p>
+							  <p>We do research on new statistical methods for analyzing flow cytometry data, including methods for determining vaccine positivity, automated and semi-automated gating and data analysis pipelines, as well as quality assurance, quality control, and visualization.</p>
+							  <ul class="thumbnails">
+								  <li class="span6">
+									  <a href="./utils/img/flowViz.png" class="thumbnail" id="flow1" title="flowViz visualization of flow cytometry data conditioning on study variables.">
+										  <img src="./utils/img/flowViz.png" alt="flowViz_Visualization">
+									  </a>
+									  <h4>
+										  FlowViz Visualization With Conditioning on Study Variables
+									  </h4>
+									  <p>
+										  We have extended <a href="https://github.com/RGLab/flowViz">flowViz</a> to allow for visualization of large data sets of manually gated flow data with associated study metadata using the standard R formula interface. Data exploration and quality control are greatly simplified with the new API.
+									  </p>
+								  </li>
+								  </ul>
 							  </div>
 					
 						  <div class="tab-pane" id="2">
@@ -248,6 +261,16 @@
 		}
 	}
 	});});
+	
+	$(document).ready(function() {
+	$("#flow1").fancybox({
+	helpers : {
+		title : {
+			type : 'over'
+		}
+	}
+	});});
+	
 	$(document).ready(function() {
 	$("#cyto2").fancybox({
 	helpers : {
