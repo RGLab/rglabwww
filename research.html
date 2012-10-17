@@ -111,6 +111,17 @@
 										  We have extended <a href="https://github.com/RGLab/flowViz">flowViz</a> to allow for visualization of large data sets of manually gated flow data with associated study metadata using the standard R formula interface. Data exploration and quality control are greatly simplified with the new API.
 									  </p>
 								  </li>
+								  <li class="span6">
+									  <a href="./utils/img/MIMOSA_ROC.png" class="thumbnail" id="flow1" title="ROC curves comparing the MIMOSA method to other methods for vaccine positivity calls.">
+										  <img src="./utils/img/MIMOSA_ROC.png" alt="MIMOSA_ROC_CURVES">
+									  </a>
+									  <h4>
+										  Comparison of MIMOSA against other methods for vaccine positivity calls
+									  </h4>
+									  <p>
+										  We are developing statistical methods for downstream analysis of flow cytometry assay data. MIMOSA is a new method for identifying vaccine responders from ICS (intracellular cytokine staining) data. The figure shows a comparison of the sensitivity and specificity of MIMOSA compared to other methods for determining vaccine response.
+									  </p>
+								  </li>
 								  </ul>
 							  </div>
 					
@@ -286,6 +297,15 @@
 	
 	$(document).ready(function() {
 	$("#flow1").fancybox({
+	helpers : {
+		title : {
+			type : 'over'
+		}
+	}
+	});});
+	
+	$(document).ready(function() {
+	$("#flow2").fancybox({
 	helpers : {
 		title : {
 			type : 'over'
