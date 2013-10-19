@@ -619,7 +619,7 @@ form.well {
   margin-left: 6px;
 }
 
-/* Eaxmples page
+/* Examples page
 ------------------------- */
 .bootstrap-examples .thumbnail {
   margin-bottom: 9px;
@@ -791,4 +791,7 @@ form.well {
   top:-50px;
 }*/
 
+.userInfo {
+    height: 244px;
+}
 
