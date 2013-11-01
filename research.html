@@ -57,7 +57,7 @@
 
 
 		  <!-- Masthead ================================================== -->
-		  <header class="jumbotron subhead" id="Members">
+		  <header class="jumbotron subhead" id="Research">
 		  	  <div class="container">		  
 			  <h1><a href="http://www.rglab.org" title="Raphael Gottardo's Research Lab">rglab</a>::research</h1>
 			  <p class="lead">Raphael Gottardo's Research Lab</p>
@@ -266,7 +266,7 @@
 						  <br /><br />
 						  <p class="pull-left"> &copy; 2012 <a href="#">rglab</a>. All right reserved.</p>
 						  <br />
-						  <p class="pull-left">Made with <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.</p>
+						  <p class="pull-left">Made with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
 						  
 					  </footer>
 			  </div><!--span12-->
@@ -275,121 +275,133 @@
     
     <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>	
-    <script src="./utils/js/jquery.js"></script>
-    <script src="./utils/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="./utils/js/jquery.js"></script>
+    <script type="text/javascript" src="./utils/js/bootstrap.js"></script>
 	<script type="text/javascript" src="./utils/js/jquery.tweetable.js"></script>
 
 	  <!-- Add fancyBox -->
-	<link rel="stylesheet" href="./utils/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
-	<script type="text/javascript" src="./utils/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+	<link rel="stylesheet" href="./utils/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="./utils/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
+
 	$("#cyto1").fancybox({
 	helpers : {
 		title : {
 			type : 'over'
 		}
 	}
-	});});
+	});
 	
-	$(document).ready(function() {
 	$("#flow1").fancybox({
 	helpers : {
 		title : {
 			type : 'over'
 		}
 	}
-	});});
+	});
 	
-	$(document).ready(function() {
 	$("#flow2").fancybox({
 	helpers : {
 		title : {
 			type : 'over'
 		}
 	}
-	});});
+	});
 	
-	$(document).ready(function() {
 	$("#cyto2").fancybox({
 	helpers : {
 		title : {
 			type : 'over'
 		}
 	}
-	});});
-	$(document).ready(function() {
+	});
+
 	$("#pep1").fancybox({
     	helpers : {
     		title : {
     			type : 'over'
     		}
     	}
-    });	});
+    });
     
-    $(document).ready(function() {
     $("#pep2").fancybox({
     	helpers : {
     		title : {
     			type : 'over'
     		}
     	}
-    });	});
+    });
 
-	$(document).ready(function() {
 	$("#epi1").fancybox({
 		helpers : {
 			title : {
 				type : 'over'
 			}
 		}
-	});	});
+	});
 
-	$(document).ready(function() {
 	$("#epi2").fancybox({
 		helpers : {
 			title : {
 				type : 'over'
 			}
 		}
-	});	});
+	});
 
-	$(document).ready(function() {
 	$("#SC1").fancybox({
 		helpers : {
 			title : {
 				type : 'over'
 			}
 		}
-	});	});
+	});
 
-	$(document).ready(function() {
 	$("#SC2").fancybox({
 		helpers : {
 			title : {
 				type : 'over'
 			}
 		}
-	});	});
+	});
+
+	});
     
-	</script>	
-<!-- Google Analytics -->
-<script type="text/javascript">
+	</script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36597070-1']);
-  _gaq.push(['_trackPageview']);
+    <!-- Web Font Loader -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Alegreya+SC:400,700:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Google Analytics -->
+    <script type="text/javascript">
 
-</script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36597070-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 	
   </body>
 </html>

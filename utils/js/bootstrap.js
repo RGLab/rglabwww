@@ -1951,9 +1951,22 @@
 
   var Affix = function (element, options) {
     this.options = $.extend({}, $.fn.affix.defaults, options)
-    this.$window = $(window).on('scroll.affix.data-api', $.proxy(this.checkPosition, this))
+    this.$window = $(window)
+        .on('scroll.affix.data-api', $.proxy(this.checkPosition, this))
+        .on('click.affix.data-api', $.proxy(this.checkPositionWithEventLoop, this))
+        .on('keyup.affix.data-api', $.proxy(this.checkPositionWithEventLoop, this))
     this.$element = $(element)
+
+    this.affixed  =
+    this.unpin    = null
+
     this.checkPosition()
+  }
+
+  Affix.RESET = 'affix affix-top affix-bottom'
+
+  Affix.prototype.checkPositionWithEventLoop = function () {
+    setTimeout($.proxy(this.checkPosition, this), 1)
   }
 
   Affix.prototype.checkPosition = function () {
@@ -1978,11 +1991,17 @@
       'top'    : false
 
     if (this.affixed === affix) return
+    if (this.unpin) this.$element.css('top', '')
 
     this.affixed = affix
     this.unpin = affix == 'bottom' ? position.top - scrollTop : null
 
-    this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ''))
+    this.$element.removeClass(Affix.RESET).addClass('affix' + (affix ? '-' + affix : ''))
+
+    if (affix == 'bottom') {
+      this.$element.offset({ top: document.body.offsetHeight - offsetBottom - this.$element.height() })
+    }
+
   }
 
 

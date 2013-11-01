@@ -113,7 +113,7 @@
 						  <br /><br />
 						  <p class="pull-left"> &copy; 2012 <a href="#">rglab</a>. All right reserved.</p>
 						  <br />
-						  <p class="pull-left">Made with <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.</p>
+						  <p class="pull-left">Made with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
 						  
 					  </footer>
 			  </div><!--/span12-->
@@ -123,12 +123,30 @@
     <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>	
-    <script src="./utils/js/jquery.js"></script>
-    <script src="./utils/js/bootstrap.js"></script>
-    <script type="text/javascript" src="./utils/js/jquery.tweetable.js"></script>	
+    <script type="text/javascript" src="./utils/js/jquery.js"></script>
+    <script type="text/javascript" src="./utils/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./utils/js/jquery.tweetable.js"></script>
+
     <script type="text/javascript">
-    $('#rglab').tooltip()
+        $('#rglab').tooltip();
     </script>
+
+    <!-- Web Font Loader -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Alegreya+SC:400,700:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
     <!-- Google Analytics -->
     <script type="text/javascript">
     

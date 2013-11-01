@@ -70,7 +70,7 @@ hr.soften {
 /* Jumbotrons
 -------------------------------------------------- */
 .jumbotron {
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-family: Copperplate, "Copperplate Gothic Light", 'Alegreya SC', serif;
 	color: #fff;
 	position: relative;
 	padding: 40px 0;
@@ -90,9 +90,7 @@ hr.soften {
 }
 
 .jumbotron h1 {
-/*  margin-bottom: 9px;*/
   font-size: 72px;
-  letter-spacing: -1px;
   line-height: 1;
 }
 .jumbotron p {
@@ -158,7 +156,9 @@ color: #000;
   margin-top: 0px;  
 }
 .subhead h1 {
-  font-size: 54px;
+  font-size: 44px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
 
 /* Subnav */
@@ -688,7 +688,8 @@ form.well {
 
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
-    padding: 40px 20px;
+    padding: 0px 20px;
+    /* padding: 40px 20px; */
     margin-top:   -20px; /* Offset bottom margin on .navbar */
     margin-right: -20px;
     margin-left:  -20px;
@@ -762,7 +763,6 @@ form.well {
 
   /* center align subhead text like the masthead */
   .subhead h1{
-  	
   	font-size: 30px;  	
   }
   .subhead p {
@@ -783,15 +783,61 @@ form.well {
 }
 
 
-
-
-/*hack for the anchor offset*/
-/*.wrapperdiv{
-  position:relative;
-  top:-50px;
-}*/
-
 .userInfo {
     height: 244px;
 }
 
+.customAnchor {
+    position: relative;
+    top: -32px;
+    display: block;
+}
+
+.affix {
+    top: 45px;
+}
+
+.affix-top {
+    width: 62px;
+}
+
+.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 120px;
+}
+
+.nav-inner {
+    background: white;
+}
+
+.jumbotron .container h1, .subhead .container p {
+    letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 980px) {
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 0px;
+  }
+
+    .affix-top {
+        width: 52px;
+    }
+
+    .customAnchor {
+        position: relative;
+        top: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .affix-top {
+        width: auto;
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+}

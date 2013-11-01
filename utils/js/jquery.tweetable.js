@@ -39,7 +39,7 @@
                 $.each(data, function (i, item) {
 					//check for the first loop
                     if (i == 0) {
-                    	//create an unordered list to store tweets in
+                        //create an unordered list to store tweets in
                         $tweetList = $('<ul class="tweetList">')[defaults.position.toLowerCase() + 'To'](act);
                     }
                     //handle @reply filtering if required
