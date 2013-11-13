@@ -816,7 +816,7 @@ form.well {
 }
 
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 979px) {
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 0px;
